@@ -191,26 +191,19 @@ class Zh extends CI_Controller {
         $data = array(
             "judul" => $judul,
             "ta" => array(
-                "judul" => "Terms and conditions for those purchasing any of the books above at subsidized
-                prices",
+                "judul" => "",
                 "termsandcondition" => array(
-                    "This offer is valid while the stock is available",
-                    "This offer is offerd to students, who presently studies at a seminary or a Bible school
-                    in Indonesia",
-                    "The order should be sent together with a photocopy of the student ID card, which
-                    has the signatures of the student and the dean of students, and also the official stamp of
-                    the seminary",
-                    "Each student is limited to one set/one copy for each title at subsidized prices.",
-                    "A collective order is highly recommended."
                 )
             ),
             "konten" => array(
-                "The books written by Rev. Hasan Sutanto, D.Th. may be purchased at bookstores in
-                Indonesia. Besides being distributed at regular prices, TIM provides subsidies to
-                students studying at seminaries and Bible schools throughout Indonesia.
-                For those interested in purchasing Rev. Hasan Sutanto’s books, either at regular or subsidized prices, may contact",
-                "tim.for.book@gmail.com",
-                "Or through TIM Distributor"
+                "陈南山牧师/博士的印尼语著作可在印尼各书店购买。除了以正常书价推广外，文
+                字事工小组也补助目前在印尼神学院，圣经学校受造就有意订购这些书的神学生。
+                有关的神学生或者其他有意定购的同道可直接联络文字事工小组",
+                "（电邮地址：tim.for.book@gmail.com）",
+                "，
+                或者与印尼玛琅东南亚圣道神学院出版部，或最近的基督教书店联系。
+                印尼玛琅东南亚圣道神学院出版部
+                "
             ),
             "dataAlamat" => array(
                 "namatempat" => "Departemen Literatur SAAT",
@@ -223,36 +216,13 @@ class Zh extends CI_Controller {
             ),
             "barang" => array(
                 "item1" =>array(
-                    "Perjanjian Baru Interlinear Yunani-Indonesia dan Konkordansi Perjanjian Baru (PBIKIndonesia) Edisi Revisi 2014",
-                    "Regular edition IDR 485,000/set (two volumes) shipping and handling within
-                    Indonesia NOT included",
-                    "Subsidized edition IDR 385,000/set (two volumes) shipping and handling within
-                    Indonesia included."
-                ),
-
-                "item2" =>array(
-                    "Hermeneutik: Prinsip dan Metode Penafsiran Alkitab",
-                    "Regular edition IDR 70,000, shipping and handling NOT included",
-                    "Subsidized edition IDR 40,000, shipping and handling within Indonesia included."
-                ),
-
-                "item3" => array(
-                    "Homiletik: Prinsip dan Metode Berkhotbah",
-                    "Regular edition IDR 54,000, shipping and handling NOT included",
-                    "Subsidized edition IDR 32,500, shipping and handling within Indonesia included"
-                ),
-
-                "item4" => array(
-                    "Surat Yakobus: Berita Perdamaian yang Patut Didengar",
-                    "Regular edition IDR 48,000, shipping and handling NOT included",
-                    "Subsidized edition IDR 27,500, shipping and handling within Indonesia included"
-                ),
-
-                "item5" => array(
-                    "Perjanjian Baru Interlinear Yunani-Tionghoa dan Konkordansi Perjanjian Baru (PBIKTionghoa)",
-                    "Regular edition IDR 600,000/set (two volumes), shipping and handling within
-                    Indonesia NOT included",
-                    "There is no subsidized price"
+                    "《新约希腊语-汉语逐字译本与新约经文汇编》(希汉逐字译本)
+                    正常价钱印尼盾 600.000 不包含寄费；不设优惠价。",
+                    "除了在印尼玛琅东南亚圣道神学院出版部，《希汉逐字译本》也可在基道书店(香
+                    港)，校园书房(台北)，书花书室(Pustaka Sufes Sdn. Bhd 西马来西亚八打靈再也)，
+                    新加坡圣经公会书店订购。译本的内容简介可参考
+                    <br/><a href = 'https://shop.campus.org.tw/ProductDetails.aspx?productID=000549417'>https://shop.campus.org.tw/ProductDetails.aspx?productID=000549417</a>",
+                    ""
                 ),
             )
         );
@@ -275,10 +245,10 @@ class Zh extends CI_Controller {
     }
     public function contact(){
         $judul = "Hubungi Kami";
-        $this->session->page = "contact";
+        $this->session->page = "联系我们";
         $data = array(
             "judul" => $judul,
-            "konten" => "The easiest way to contact TIM or Rev. Hasan Sutanto, D.Th. is writing an email to ",
+            "konten" => "联络文字事工小组或者陈南山牧师/博士最方便的方式是写信到以下电邮地址：",
             "email" => "tim.for.book@gmail.com."
             
         );

@@ -267,7 +267,7 @@ class Hs extends CI_Controller {
     }
     public function sermons(){
         $this->session->page = "sermons";
-        $judul = "Khotbah";
+        $judul = "Sermons";
         $data = array(
             "judul" => $judul,
             "sermons" => $this->Videos->getSermonsVideos()->result()
@@ -278,7 +278,7 @@ class Hs extends CI_Controller {
         $this->load->view("req/script");   
     }
     public function contact(){
-        $judul = "Hubungi Kami";
+        $judul = "Contact Us";
         $this->session->page = "contact";
         $data = array(
             "judul" => $judul,
