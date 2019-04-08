@@ -1,3 +1,7 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/STKaiti.ttf);
+}
 ::-moz-selection {
 	background-color: #988fff;
 	color: #fff;
@@ -32,6 +36,15 @@ body {
 	color: #777;
 	font-family: "Poppins", sans-serif;
 	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.625em;
+	position: relative;
+}
+.chinnese{
+    
+	color: #777;
+	font-family: myFirstFont;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.625em;
 	position: relative;
@@ -1671,7 +1684,7 @@ h6 {
 }
 #header.header-scrolled {
 	box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.5);
 	transition: all 0.5s;
 }
 @media (max-width: 673px) {
@@ -1931,7 +1944,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .p1-gradient-bg,
 .faq-area .faq-left .mn-accordion .state-open .accordion-heading,
 .testomial-area {
-	background-color: #658ca3;
+	background-color: #0054c7;
 }
 .p1-gradient-color {
 	background-color: #b9dee6;
@@ -2009,7 +2022,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	bottom: 0;
 }
 .banner-area {
-	background-color: #658ca3;
+	background-color: #0054c7;
 	background-size: cover;
 }
 @media (max-width: 767px) {
@@ -2110,24 +2123,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 	}
 }
 .home-about-area {
+	padding:20px;
     height: auto;
-	background-color: #f9f9ff;
+	/*color: #fff;*/
+	background-color:#fff;
 }
-.home-about-area:after {
+/*.home-about-area:after {
 	position: absolute;
 	content: "";
 	bottom: 0;
 	right: 0;
 	width: 50%;
-	height: 100%;
-	background: url(../img/foto-nobg.png) no-repeat center ;
-    background-size:contain;
-	z-index: 1;
-}
+	height: 80%;
+	/*background: url(../img/foto-nobg.png) no-repeat center ;*/
+    /*background-size:contain;*/
+	/*z-index: 1;
+}*/
 @media (max-width: 991px) {
-	.home-about-area:after {
+	/*.home-about-area:after {
 		display: none;
-	}
+	}*/
 }
 @media (max-width: 991px) {
 	.home-about-area .justify-content-end {
@@ -2136,9 +2151,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .home-about-area h1 {
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .home-about-area .home-about-right {
-	max-width: 580px;
+	/*max-width: 580px;
 	padding-right: 36px;
 }
 @media (max-width: 1024px) {
@@ -2198,7 +2214,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	font-weight: 300;
 }
 .discount-section-area .discount-right .form-control::placeholder {
-	color: #fff;
+	color: #f9f9ff;
 }
 .discount-section-area .discount-right .form-control:focus {
 	box-shadow: none !important;
@@ -2295,10 +2311,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #988fff !important;
 }
 .faq-area .faq-left .mn-accordion .state-open .accordion-heading h3 {
-	color: #fff !important;
+	color: #000 !important;
 }
 .faq-area .faq-left .mn-accordion .state-open .accordion-heading .icon i {
-	color: #fff !important;
+	color: #000 !important;
 }
 .faq-area .faq-left .mn-accordion .accordion-item .accordion-heading .icon {
 	color: #000;

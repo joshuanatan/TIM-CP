@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = 'http://hasansutanto.org/';
-$config['base_url'] = 'http://localhost/project/hasansutanto';
+$config['base_url'] = 'http://localhost:8888/project/hasansutanto';
 /*
 |--------------------------------------------------------------------------
 | Index File

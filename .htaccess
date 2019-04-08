@@ -1,16 +1,16 @@
 #ver linux below
 #-------------------#
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
 
 #ver windows below
 #<IfModule mod_rewrite.c>
-#  RewriteEngine On
-# RewriteBase /project/hasansutanto
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^(.*)$ index.php?/$1 [L]
+ RewriteEngine On
+ RewriteBase /project/hasansutanto
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^(.*)$ index.php?/$1 [L]
 
 #</IfModule>

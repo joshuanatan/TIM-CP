@@ -174,7 +174,7 @@ class Content extends CI_Model{
             "status" => "1"
         );
         $this->db->where($where);
-        $this->db->order_by("tahun","DESC");
+        $this->db->order_by("tahun","ASC");
         $this->db->from("translate");
         return $this->db->get();
     }
